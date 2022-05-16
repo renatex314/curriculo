@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: jetbrains;
+    src: url("../fonts/JetBrainsMono-Regular.ttf");
+}
+
+::-webkit-scrollbar {
+    background: #EEEEEE;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 5px solid #EEEEEE;
+    background: #5381CF;
+    border-radius: 10px;
+}
+
+a {
+    color: #00000000;
+}
+
+body {
+    font-family: jetbrains;
+}
+
+header {
+    display: flex;
+    height: 60px;
+    padding: 30px;
+}
+
+header img {
+    display: inline-block;
+    height: 100%;
+}
+
+header div {
+    flex-grow: 1;
+}
+
+.img {
+    border-radius: 1500px;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid black;
+    background: #f5f5f5;
+}
+
+#logo {
+    text-align: right;
+    height: 100%;
+    margin: auto 0;
+}
+
+#logo img {
+    border-radius: 100%;
+    object-fit: cover;
+    transform: scale(1.2);
+    border: 1px solid black;
+}
+
+#menu-button {
+    height: 70%;
+    margin: auto 0;
+}
+
+#menu {
+    top: 0;
+    left: -270px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #00000044;
+    border-top: none;
+    box-shadow: 0 0 8px #00000033;
+    position: absolute;
+    width: 270px;
+    height: 100vh;
+    box-sizing: border-box;
+
+    transition: 0.2s all;
+}
+
+#menu-button img:hover + #menu, #menu:hover {
+    left: 0; 
+}
+
+#biografia {
+    word-break: break-all;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 80%;
+    height: 300px;
+    padding: 20px;
+    background: white;
+    margin: 50px auto;
+    border: 1px solid #00000044;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #00000033;
+}
+
+#curriculos {
+    display: flex;
+}
+
+#curriculos a {
+    display: flex;
+    flex-grow: 0;
+    width: 150px;
+    height: 150px;
+}
+
+#curriculos a:first-child {
+    margin-left: auto;
+}
+
+#curriculos a:last-child {
+    margin-right: auto;
+}
+
+#curriculos img {
+    height: 100px;
+    margin: auto;
+    transition: 0.2s all;
+}
+
+#curriculos .img:hover {
+    padding: 5px;
+}

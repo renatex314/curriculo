@@ -1,0 +1,147 @@
+@font-face {
+	font-family: fonte-daora;
+	src: url("../fonts/JetBrainsMono-Regular.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+body {
+	position: absolute;
+	font-family: fonte-daora;
+	display: flex;
+	margin: 0;
+	
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+ul {
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1, h4 {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+}
+
+.nome {
+	margin: 20px 0 0 0;
+	word-wrap: break-word;
+	text-align: left;
+	font-weight: bold;
+	font-size: 60px;
+	color: #002d70;
+	width: 500px;
+}
+
+.profissao {
+	margin-top: 25px;
+}
+
+.foto {
+	margin-bottom: 20px;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 100px;
+	transition: 2s all;
+	transition-timing-function: linear;
+}
+
+.foto:hover {
+	transform: rotate(100080deg);
+	filter: invert(1);
+	box-shadow: 0 0 100px red;
+}
+
+.icone {
+	width: 23px;
+	height: 23px;
+	filter: invert(100%);
+}
+
+.contato-secao {
+	color: #FFFFFF;
+	background: #002d70;
+	padding: 50px 40px;
+	flex-grow: 0;
+	width: 300px;
+	text-align: center;
+}
+
+.dados-secao {
+	padding: 20px 40px;
+	text-align: left;
+	flex-grow: 1;
+	background: #fdb346;
+}
+
+.titulo-contato {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: left;
+}
+
+.lista-contato {
+	margin-bottom: 50px;
+	text-align: left;
+}
+
+.lista-contato li {
+	display: flex;
+	padding: 8px 0;
+}
+
+.lista-contato li p {
+	margin: auto 8px;
+}
+
+.lista-skills p {
+	margin-top: 20px;
+}
+
+.lista-skills li {
+	display: flex;
+	flex-direction: column;
+	border-radius: 30px;
+}
+
+.bolinhas-lista li {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: white;
+}
+
+.bolinhas-lista .empty {
+	background: #BBBBBB;
+}
+
+.dados-lista h3 {
+	margin-top: 60px;
+	margin-bottom: 20px;
+	color: #002d70;
+	font-size: 50px;
+}
+
+.foto_home {
+	margin-bottom: 20px;
+	width: 150px;
+	height: 150px;
+	border-radius: 200px;
+	
+}
+
+.durex {
+	border-radius: 500px;
+	background-color: black;
+	border: 1px solid black;
+
+}
